@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 
 import Header from './header';
 import {Global, css} from '@emotion/react'
+import Footer from './footer'
 
 const Layout = (props) => {
     return (  
@@ -42,14 +43,16 @@ const Layout = (props) => {
             />
             <Helmet>
                 <title>Hotel California</title>
-                <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
-               {/*  <link rel="preconnect" href="https://fonts.googleapis.com">
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> */}
-                <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"></link>
+                <meta name="description"  />
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" />
+                <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Roboto:400,700&display=swap" rel="stylesheet" />
             </Helmet>
 
-            <Header/>
-            {props.children}
+            <Header />
+                {props.children}
+            <Footer 
+               
+            />
         </>
     );
 }
