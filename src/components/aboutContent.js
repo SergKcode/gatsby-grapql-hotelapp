@@ -23,19 +23,19 @@ const Content = styled.main`
 
 const AboutContent = () => {
     const result = useStaticQuery(graphql`
-    query {
-        allDatoCmsPagina(filter: { slug: { eq: "about" } }) {
-              nodes {
-              title
-              content
-              image {
-                fluid( maxWidth: 1200 ) {
-                  ...GatsbyDatoCmsFluid
+        query {
+            allDatoCmsPage(filter: { slug: { eq: "about" } }) {
+                nodes {
+                title
+                content
+                image {
+                    fluid( maxWidth: 1200 ) {
+                    ...GatsbyDatoCmsFluid
+                    }
                 }
-              }
+                }
             }
         }
-      }
     `);
 
     const { title, content, image } = result.allDatoCmsPagina.nodes[0];
