@@ -9,7 +9,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         }
     `);
 
-    // console.log(resultado.data.allDatoCmsHabitacion.nodes);
+    // console.log(resultado.data.allDatoCmsRoom.nodes);
 
     if(result.errors) {
         reporter.panic('There is any result', result.errors);

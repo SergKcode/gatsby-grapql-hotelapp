@@ -11,7 +11,7 @@ const HomeLink = styled(Link)`
     text-decoration: none;
 `;
 
-const Footer = () => {
+const Footer = ({title}) => {
 
     const year = new Date().getFullYear();
     return ( 
@@ -34,11 +34,11 @@ const Footer = () => {
                     }
                 `}
             >
-                <Navigation />
+                {/* <Navigation /> */}
 
                 <HomeLink
                     to='/'
-                ><h1>Hotel Gatsby</h1> </HomeLink>
+                ><h1>Hotel California</h1> </HomeLink>
             </div>
         </footer>
         <p
@@ -50,7 +50,7 @@ const Footer = () => {
                 padding: 1rem;
             `}
         >
-             Todos los derechos Reservados {year} &copy;
+             {title}. Todos los derechos Reservados {year} &copy;
         </p>
         </>
      );

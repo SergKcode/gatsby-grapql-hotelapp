@@ -38,7 +38,7 @@ const AboutContent = () => {
         }
     `);
 
-    const { title, content, image } = result.allDatoCmsPagina.nodes[0];
+    const { title, content, image } = result.allDatoCmsPage.nodes[0];
 
     return ( 
         <>
