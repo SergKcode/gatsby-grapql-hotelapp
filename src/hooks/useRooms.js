@@ -7,6 +7,8 @@ const useRooms = () => {
             allDatoCmsRoom{
                 nodes{
                     title
+                    id
+                    slug
                     content
                     image{
                         fluid{

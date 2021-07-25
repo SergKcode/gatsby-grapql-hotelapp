@@ -2,7 +2,7 @@ import React from 'react';
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { Link } from 'gatsby';
-import Navigation from './nav';
+
 
 
 const HomeLink = styled(Link)`
